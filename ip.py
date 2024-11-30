@@ -27,6 +27,6 @@ first_column_data = [line.split(",")[0] for line in lines[1:-1] if line.strip()]
 # 将第一列数据保存到txt文件，每行后面加上'#优选IP'，指定编码为utf-8
 with open('first_column_data.txt', 'w', encoding='utf-8') as file:
     for item in first_column_data:
-        file.write(f"{item} #优选IP\n")
+        file.write(f"{item} #HK\n")
 
 print('第一列数据已保存到first_column_data.txt文件中')
