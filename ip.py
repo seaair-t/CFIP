@@ -25,7 +25,7 @@ lines = csv_content.split("\n")
 first_column_data = [line.split(",")[0] for line in lines[1:-1] if line.strip()]
 
 # 将第一列数据保存到txt文件，每行后面加上'#优选IP'，指定编码为utf-8
-with open('first_column_data.txt', 'w', encoding='utf-8') as file:
+with open('first_column_data.txt1', 'w', encoding='utf-8') as file:
     for item in first_column_data:
         file.write(f"{item} #HK\n")
 
